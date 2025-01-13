@@ -1,65 +1,39 @@
-import {
-    MdArrowOutward,
-    MdFavoriteBorder,
-    MdMoving,
-    MdPeopleOutline
-} from "react-icons/md";
+import Image from "next/image";
 
 export function About() {
   return (
-    <div className="h-[55dvh] w-full relative  bg-black mb-32 ">
-      <div
-        className="w-full h-full absolute opacity-30 bg-contain top-0"
-        style={{
-          background: "url(/pexels-fauxels-3183183.jpg)",
-          backgroundAttachment: "fixed",
-          backgroundSize: "cover"
-        }}
-      ></div>
+    <div className="grid grid-cols-3 px-16 py-20 gap-7" id="about">
+      <div className="col-span-1 pr-7 ">
+        <Image
+          src={"/logo-collage.png"}
+          width={1000}
+          height={1000}
+          alt="logo-collage"
+        />
+      </div>
 
-      <div className="grid grid-cols-3 text-white  px-16 w-full h-full z-10 relative gap-10 pr-0">
-        <div className="col-span-1 h-full flex flex-col justify-start gap-3 py-10 pt-20">
-          <p className="text-[13px]">⏤ At Dezrek Technologies</p>
-          <h3 className="text-5xl font-[600] leading-[3rem]">
-            We Ensure our clients get the best.
-          </h3>
-        </div>
-        <div className="col-span-2 h-full relative flex flex-col items-center justify-center backdrop-blur-sm p-5 pr-0">
-          <div className="bg-white w-full h-full gap-10 pt-16 px-16  rounded-xl rounded-r-[0]">
-            <div className="flex justify-between items-center gap- pt-5 text-black">
-              <div className="col-span-1 h-full w-full flex flex-col items-center justify-center gap-2">
-                <h4 className="text-7xl font-[500] flex">
-                  30 <MdPeopleOutline className="text-xl text-pink-600" />
-                </h4>
-                <p className="text-sm">Customer Reviews</p>
-              </div>
-              <span>|</span>
-              <div className="col-span-1 h-full w-full flex flex-col items-center justify-center gap-2">
-                <h4 className="text-7xl font-[500] flex">
-                  15 <MdFavoriteBorder className="text-xl text-orange-500" />
-                </h4>
-                <p className="text-sm">Happy Clients</p>
-              </div>
+      <div className="col-span-2 flex flex-col gap-7 justify-center">
+        <h3 className="text-3xl font-semibold">⎯ About Dezrek</h3>
 
-              <span>|</span>
+        <div className="flex flex-col gap-3">
+          <p className="text-[13px]">
+            At DezrekTechnologies, we are a team of passionate technologists
+            dedicated to crafting innovative digital solutions. We specialize in
+            creating websites, mobile apps, and web applications tailored to
+            help businesses excel in the digital world. Combining creativity,
+            technology, and functionality, we deliver sleek, performance-driven
+            products that meet the highest standards of excellence.
+          </p>
 
-              <div className="col-span-1 h-full w-full flex flex-col items-center justify-center gap-2">
-                <h4 className="text-7xl font-[500] flex">
-                  22 <MdMoving className="text-xl text-blue-500" />
-                </h4>
-                <p className="text-sm">Return Rate</p>
-              </div>
-            </div>
+          <br />
+          <hr />
 
-            <div className="  text-white  w-full h-auto  z-10 rounded-xl p-3 mx-auto flex justify-center mt-7">
-              <div className="flex flex-col text-[13px] text-white items-center gap-3">
-                <button className="flex rounded-full border border-black p-4 text-black bg-white px-7 gap-3 items-center pr-4">
-                  Behold the power of our cracked developers ⏤ Explore our
-                  portfolio
-                  <MdArrowOutward />
-                </button>
-              </div>
-            </div>
+          <div className="mt-5">
+            <p className="text-[13px] italic">
+              &quot;If you can visualize a digital product, it can be
+              implemented.&quot;
+            </p>
+            <b className="text-[13px] self-end">- Ese Curtis</b>
           </div>
         </div>
       </div>
