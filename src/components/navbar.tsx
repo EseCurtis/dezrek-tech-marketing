@@ -4,7 +4,7 @@ import { Brand } from "./brand";
 
 export function NavBar() {
   return (
-    <div className="items-center p-7 px-10 grid grid-cols-5 fixed">
+    <div className="items-center p-7 px-10 grid grid-cols-5 fixed z-[50] bg-white/90 backdrop-blur-sm w-full">
       <div className="col-span-1">
         <Brand />
       </div>
