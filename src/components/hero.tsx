@@ -6,7 +6,7 @@ export function Hero() {
     <div className=" items-center justify-center h-screen grid grid-cols-3 px-16">
       <div className="col-span-2 flex flex-col gap-7 h-full justify-center">
         <h1 className="text-7xl font-semibold">
-          Web, Mobile, & Beyond – Tailored Digital Solutions.
+          Web, Mobile, & <br /> Beyond – Tailored Digital Solutions.
         </h1>
         <p className="max-w-[70%] text-[13px]">
           Discover a team dedicated to crafting sleek, performance-driven
@@ -31,7 +31,7 @@ export function Hero() {
         </div>
       </div>
 
-      <div className="col-span-1">
+      <div className="col-span-1 scale-125">
         <Image
           src="/professor.png"
           alt="Dezrek Technologies Hero Image"

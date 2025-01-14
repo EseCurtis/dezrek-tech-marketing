@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export function About() {
   return (
-    <div className="grid grid-cols-3 px-16 py-20 gap-7" id="about">
+    <div className="grid grid-cols-2 px-16 py-20 gap-7" id="about">
       <div className="col-span-1 pr-7 ">
         <Image
           src={"/logo-collage.png"}
@@ -12,7 +12,7 @@ export function About() {
         />
       </div>
 
-      <div className="col-span-2 flex flex-col gap-7 justify-center">
+      <div className="col-span-1 flex flex-col gap-7 justify-center">
         <h3 className="text-3xl font-semibold">⎯ About Dezrek</h3>
 
         <div className="flex flex-col gap-3">
